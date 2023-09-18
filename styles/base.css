@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 body{
-    width: 50%;
-    margin: 0 auto;
-    align-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 nav{
@@ -28,12 +28,8 @@ header {
 }
 
 header img{
-    width: 200px;
-    margin-top: -1rem;
-    margin-bottom: -1rem;
-    box-shadow: 3px 5px 5px rgba(0,0,0,0.5);
-    padding-left: 0;
-    margin-left: 1rem;
+    width: 100px;
+    padding-left: 1rem;
 }
 
 header h1 {
