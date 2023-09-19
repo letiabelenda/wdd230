@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #0c181c;
+    color: white;
+    font-family: 'Croissant One', sans-serif;
+}
+
+h2 {
+    background-color: #5c5e36;
+    font-family: 'Croissant One', sans-serif;
+}
+
+img {
+    box-shadow: 0 0 30px #333;
+}
+
+footer {
+    background-color: #0c181c;
+    color: white;
+    text-align: center;
+    font-family: 'Croissant One', sans-serif;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+main section {
+    background-color: #fef6cd;
+}
+
+main section picture img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+}
+
+/* phone or baseline views **************************/
+main {
+	max-width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+}
+
+main section h2 {
+	color: white;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 600px) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 1000px) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+    main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
+

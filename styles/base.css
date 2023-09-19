@@ -28,8 +28,9 @@ header {
 }
 
 header img{
-    width: 50px;
+    width: 100%;
     padding-left: 1rem;
+    height: auto;
 }
 
 header h1 {
