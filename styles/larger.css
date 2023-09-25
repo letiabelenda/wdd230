@@ -32,13 +32,12 @@
         text-align: center;
     }
 
-    #menu {
-        display: none;
+    .active::before {
+        content: "✨";
     }
 
-    nav ul#navigation {
-        display: flex;
-        justify-content: end;
+    #menu {
+        display: none;
     }
 
     header img{
