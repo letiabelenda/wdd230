@@ -1,4 +1,37 @@
 @media only screen and (min-width: 600px) {
+    body{
+        width: 80%;
+        margin: 0 auto;
+        align-content: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        max-width: 100%;
+        margin: 1rem auto;
+        background-color: var(--main-color);
+    }
+    
+    .navigation {
+		display: flex;
+	}
+    
+	.navigation li {
+		display: block;
+        flex: 1 1 100%;
+    }
+    
+    .navigation a {
+        text-align: center;
+    }
+
+    .active::before {
+        content: "✨";
+    }
+
     #menu {
         display: none;
     }
