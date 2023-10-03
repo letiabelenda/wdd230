@@ -151,11 +151,11 @@ nav ul.open {
 h1 {
     font-family: var(--subtitles);
     text-align: center;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: var(--main-color);
     line-height: 42px;
 	text-shadow: 0 2px white, 5px 3px #777;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     line-height: 5rem;
 }
 
@@ -233,12 +233,11 @@ footer{
     margin-top: 1rem;
 }
 
-.base-footer{
+.basefooter{
     color: white;
     padding: 1rem;
     text-align: center;
 }
-
 .social-icons{
     display: flex;
     flex-direction: row;
@@ -246,13 +245,10 @@ footer{
     justify-content: end;
     margin-right: 1rem;
 }
-
-.social-icons a:hover {
-    font-size: 2rem;
-}
 .social-icons img{
     width: 30px;
-    margin: 2px;
+    margin: 2px
+    
 }
 
 .grid-footer{
@@ -265,7 +261,7 @@ footer{
     color:white;
     padding-left: .2rem;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-family: var(--text);
 }
 
