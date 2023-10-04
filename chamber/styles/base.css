@@ -237,7 +237,9 @@ footer{
     color: white;
     padding: 1rem;
     text-align: center;
+    font-family: var(--text);
 }
+
 .social-icons{
     display: flex;
     flex-direction: row;
@@ -245,10 +247,14 @@ footer{
     justify-content: end;
     margin-right: 1rem;
 }
+
 .social-icons img{
     width: 30px;
-    margin: 2px
-    
+    margin: 2px;
+}
+
+.social-icons img:hover{
+    width: 50px;
 }
 
 .grid-footer{
@@ -261,15 +267,13 @@ footer{
     color:white;
     padding-left: .2rem;
     text-align: center;
-    font-size: 15px;
-    font-family: var(--text);
+    font-size: 13px;
+    font-family: var(--subtitles);
 }
-
 .logo-footer{
     display: flex;
     justify-content: center;
 }
-
 .logo-footer img{
     width: 180px;
 }
