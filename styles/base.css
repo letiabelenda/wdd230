@@ -86,7 +86,9 @@ h2{
     font-size: 1.5rem;
     text-align: center;
     border-bottom: 1px solid rgba(0,0,0,0.5);
+    background-color: aquamarine;
 }
+
 
 main {
     width: 100%;
@@ -94,11 +96,28 @@ main {
     grid-template-columns: 1fr;
 }
 
+.card1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #caf0f8;
+}
+
+.card1 h3 {
+    text-decoration: underline rgb(51, 51, 149);
+}
+
+.card2 h3 {
+    text-decoration: underline wavy rgb(51, 51, 149);
+}
+
 .card ul {
     list-style-type: none;
     font-weight: bolder;
 }
 
+.card ul li {
+    font-family: 'Gloria Hallelujah', cursive;
+}
 
 h3 {
     text-align: center;
@@ -114,4 +133,4 @@ h3 {
 footer {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-}
+} 
