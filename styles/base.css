@@ -107,7 +107,7 @@ main {
 }
 
 .card2 h3 {
-    text-decoration: underline wavy rgb(51, 51, 149);
+    text-decoration: underline overline rgb(51, 51, 149);
 }
 
 .card ul {
