@@ -21,6 +21,6 @@ button.addEventListener('click', () => {
         input.focus();
         input.value = '';;
     } else {
-        window.alert('Please write something! 👇');
+        window.alert('Please, write something! 👇');
     }
 });
