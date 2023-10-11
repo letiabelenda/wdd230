@@ -30,7 +30,8 @@ button.addEventListener('click', () => {
             addedItems.add(input.value);
 
             input.focus();
-            
+            input.value = '';
+
         } else {
             window.alert('Chapter already added! ⚠️');
         }
