@@ -22,14 +22,15 @@ button.addEventListener('click', () => {
                 list.removeChild(li);
                 input.focus();
                 // Remove the chapter from the set
-                addedItems.delete(input.value);
+                addedItems.delete(input.value); 
+                console.log(addedItems);
             });
 
             // Add chapter to the set
             addedItems.add(input.value);
 
             input.focus();
-            input.value = '';
+            
         } else {
             window.alert('Chapter already added! ⚠️');
         }
