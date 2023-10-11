@@ -22,8 +22,7 @@ button.addEventListener('click', () => {
                 list.removeChild(li);
                 input.focus();
                 // Remove the chapter from the set
-                addedItems.delete(input.value); 
-                console.log(addedItems);
+                addedItems.delete(input.value);
             });
 
             // Add chapter to the set
