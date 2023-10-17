@@ -15,7 +15,7 @@
   windSpeedElement.textContent = `Wind Speed: ${currentWindSpeed} mph`;
   windChillElement.textContent = `Wind Chill: ${windChill}`;
 
-  // Function to calculate the wind chill factor
+  // Function to calculate wind chill
 function calculateWindChill(temperature, windSpeed) {
     // Check if temperature and wind speed meet the requirements
     if (temperature <= 50 && windSpeed > 3.0) {
