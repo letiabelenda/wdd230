@@ -102,6 +102,11 @@
         opacity: 90%;
     }
     
+    .weather {
+        border-radius: 0%;
+        border-style: dotted;
+    }
+
     .events{
         grid-column: 1;
         grid-row: 1;
