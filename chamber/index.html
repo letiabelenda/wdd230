@@ -54,7 +54,11 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/Montevideo.webp" alt="montevideo">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/wdd230-org.jpg" alt="hero-image" width="2" height="1">
+            </picture>
             <div><a href="join.html" class="call-action">Join the Chamber</a></div>
         </div>
         <div class="home-title">
@@ -62,7 +66,10 @@
         </div>
         <section class="weather">
             <h2>Weather</h2>
-        </section>
+            <p class="temperature">45</p>
+            <p class="wind-speed">5.0</p>
+            <p class="wind-chill">Wind Chill: Calculating...</p>
+          </section>
         <div class="grid-section">
             <section class="events">
                 <h2>Events</h2>
@@ -123,4 +130,5 @@
     </footer>
 </body>
 <script src="scripts/getdates.js"></script>
+<script src="scripts/windchill.js"></script>
 </html>
