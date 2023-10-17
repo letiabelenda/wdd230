@@ -89,6 +89,27 @@ h2{
     background-color: aquamarine;
 }
 
+.hero{
+    width: 100%;
+    position:relative;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.herolabel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: radial-gradient(#fff, #6da5ee);
+    border: none;
+    border-radius: 25%;
+    padding: 1rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    z-index: 1;
+}
 
 main {
     width: 100%;

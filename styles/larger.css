@@ -66,4 +66,10 @@
         grid-column: 2;
         grid-row: 2/3;
     }
+
+    div.hero {
+        width: 100%;
+        margin-top: 1.5rem;
+        position: relative;
+    }
 }
