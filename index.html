@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img src="images/Me.webp" alt="me-img">
+        <img src="images/Me.webp" alt="me-img" loading="lazy">
         <h1>Leticia Abelenda</h1>
     </header>
     <nav>
@@ -117,9 +117,12 @@
         </section>
         <section class="card2">
             <h3>Information</h3>
-            <div id="Information">
-                <p id="weather" placeholder=""></p>
-                <p id="visits" placeholder=""></p>
+            <p>
+                Number of visits: 
+                <span class="visits"></span>
+            </p>
+            <div class="weather"><h4>Weather</h4>
+               <span id="current-temp"></span>
             </div>
         </section>
     </main>

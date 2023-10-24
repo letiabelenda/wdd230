@@ -151,6 +151,20 @@ h3 {
     padding: 1rem;
 }
 
+/* Weather */
+.weather {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.weather h4{
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline rgb(51, 51, 149);
+}
+
 footer {
     text-align: center;
     font-family: 'Raleway', sans-serif;
