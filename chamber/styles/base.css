@@ -310,3 +310,54 @@ footer{
 .logo-footer img{
     width: 180px;
 }
+
+/* Discover */
+.grid-discover{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-img img{
+    width: 100%;
+}
+
+.content-img p{
+    font-family: var(--text);
+}
+
+.grid-discover div div div {
+    border: 1px solid var(--second-color);
+    margin-bottom: 1.5rem;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.grid-discover h2{
+    font-family: var(--titles);
+    letter-spacing: 2px;
+    color: var(--second-color);
+}
+
+.grid-discover p{
+    padding: 1rem;
+    font-family: var(--text);
+}
+
+div.sidebar {
+    padding: 1rem;
+    font-family: var(--text);
+    border: none;
+}
+
+/* Visits */
+
+div.visits{
+    text-align: center;
+    font-family: var(--text);
+    font-size: 18px;
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+}
