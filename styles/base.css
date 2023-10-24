@@ -145,6 +145,12 @@ h3 {
     font-family: 'Raleway', sans-serif;
 }
 
+section p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: aliceblue;
+}
+
 .map {
     display: flex;
     justify-content: center;
