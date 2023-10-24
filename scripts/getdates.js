@@ -26,16 +26,37 @@ hamButton.addEventListener('click', () => {
 });
 
 // Number of visits
-const visitsDisplay = document.querySelector('.visits');
+/* LocalStorage date */ 
+const sidebar = document.querySelector('.sidebar');
 
-let numVisits = Number(window.localStorage.getItem('visits-ls'));
+let lastVisitDate = window.localStorage.getItem('last-visit-date');
 
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
+if (!lastVisitDate) {
+    // First visit
+    sidebar.textContent = "Welcome! Let us know if you have any questions.";
+	lastVisitDate = new Date();
+    numVisits = 1;
 } else {
-	visitsDisplay.textContent = 'This is your first visit! 🎉';
+    lastVisitDate = new Date(lastVisitDate);
+    const timeDifference = currentYear - lastVisitDate;
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    if (daysDifference < 1) {
+        sidebar.textContent = "Back so soon! Awesome!";
+    } else {
+        const plural = daysDifference === 1 ? "" : "s";
+        sidebar.textContent = `You last visited ${daysDifference} day${plural} ago.`;
+    }
+
+	numVisits = Number(window.localStorage.getItem('visits-ls')) || 0;
 }
 
-numVisits++;
-
+visitsDisplay.textContent = numVisits;
 localStorage.setItem('visits-ls', numVisits);
+localStorage.setItem('last-visit-date', currentYear);
+
+
+
+
+
+

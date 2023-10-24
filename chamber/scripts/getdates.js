@@ -44,4 +44,34 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 
+/* LocalStorage date*/
+ 
+const sidebar = document.querySelector('#sidebar');
+
+let lastVisitDate = window.localStorage.getItem('last-visit-date');
+
+if (!lastVisitDate) {
+    // First visit
+    sidebar.textContent = "Welcome! Let us know if you have any questions.";
+	lastVisitDate = new Date();
+    numVisits = 1;
+} else {
+    lastVisitDate = new Date(lastVisitDate);
+    const timeDifference = currentYear - lastVisitDate;
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    if (daysDifference < 1) {
+        sidebar.textContent = "Back so soon! Awesome!";
+    } else {
+        const plural = daysDifference === 1 ? "" : "s";
+        sidebar.textContent = `You last visited ${daysDifference} day${plural} ago.`;
+    }
+
+	numVisits = Number(window.localStorage.getItem('visits-ls')) || 0;
+}
+
+visitsDisplay.textContent = numVisits;
+localStorage.setItem('visits-ls', numVisits);
+localStorage.setItem('last-visit-date', currentYear);
+
 
