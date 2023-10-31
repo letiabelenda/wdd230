@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Montevideo Chamber of Commerce</title>
+    <meta name="description" content="This is the Home Page of Montevideo Chamber of Commerce page">
+    <meta name="author" content="Leticia Abelenda">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Montevideo Chamber of Commerce">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://www.descubrimontevideo.uy/sites/default/files/styles/escala_y_recorte_1600x750/public/2022-09/Letras-de-Montevideo.jpg?itok=mBvt0QPz">
+    <meta property="og:url" content="https://letiabelenda.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.webp" alt="logo">
+            </div>
+            <div class="hmbutton">
+                <button id="hamburgerBtn">
+                    <span>≡</span>
+                    <span>❎</span>
+                </button>
+            </div>
+            <div>
+                <ul id="navigationLinks">
+                    <li>
+                        <a href="index.html">Home</a></li>
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>
+                    <li>
+                        <a href="#"> Directory</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Join</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-header">
+                <a href="https://www.facebook.com">
+                    <img src="images/Facebook_icon.webp" alt="facebook-icon">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="images/social-instagram.webp" alt="instagram-icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-join">
+            <div class="container-form">
+                <form action="thankyou.html" method="get">
+                    <h1 class="jointitle">Join Us</h1>
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label class="top">First Name:* <input type="text" name="fname" required></label>
+                        <label class="top">Last Name:* <input type="text" name="lname" required></label>
+                        <label class="top">Title/Position: <input type="text" name="positiontitle"></label>
+                        <label class="top">Email:* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">Phone Number:* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="top">Buisiness/Organization Name:* <input type="text" name="businessname" required></label>
+                    </fieldset>
+                    <div>
+                        <fieldset class="radio-memb">
+                            <legend>Select Membership</legend>
+                            <div class="radios">
+                                <input type="radio" name="membership" value="npmemb">
+                                <label>NP Membership</label>
+                                <br>
+                                <input type="radio" name="membership" value="bronze">
+                                <label>Bronze Membership</label>
+                                <br>
+                                <input type="radio" name="membership" value="silver">
+                                <label>Silver Membership</label>
+                                <br>
+                                <input type="radio" name="membership" value="gold">
+                                <label>gold Membership</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <label class="top">Business Description <input type="text" name="business desc"></label>
+                        <label id="hidden">
+                            <input type="hidden" id="timestamp" name="timestamp">
+                        </label>
+                    </fieldset>
+                    <div>
+                        <input class="submitBtn" type="submit" name="Join Us" value="Join Us">
+                    </div>
+                </form>
+            </div>
+            <div class="container-membership">
+                <h2>Membership</h2>
+                <div class="gold">
+                    <h3>Gold</h3>
+                    <p><strong>Cost: $1000 per year</strong></p>
+                    <ul>
+                        <li>All Silver Membership benefits.</li>
+                        <li>VIP access to all Chamber events and programs.</li>
+                        <li>Personalized consultation with Chamber experts.</li>
+                        <li>Discounts on Chamber-sponsored advertising and sponsorships.</li>
+                    </ul>
+                </div>
+                <div class="silver">
+                    <h3>Silver</h3>
+                    <p><strong>Cost: $500 per year</strong></p>
+                    <ul>
+                        <li>All Bronze Membership benefits.</li>
+                        <li>Exclusive invites to Chamber-hosted special events.</li>
+                        <li>Increased visibility with a featured listing in the online directory.</li>
+                        <li>Access to Chamber's industry reports and research.</li>
+                    </ul>
+                </div>
+                <div class="bronze">
+                    <h3>Bronze</h3>
+                    <p><strong>Cost: $250 per year</strong></p>
+                    <ul>
+                        <li>Access to Chamber events and networking opportunities.</li>
+                        <li>Listing in the Chamber's online directory.</li>
+                        <li>Discounted advertising opportunities on the Chamber's website.</li>
+                        <li>Special recognition on the Chamber's social media.</li>
+                    </ul>
+                </div>
+                <div class="np">
+                    <h3>NP (Non-Profit)</h3>
+                    <p><strong>Cost: Free</strong></p>
+                    <ul>
+                        <li>Access to Chamber events and networking opportunities.</li>
+                        <li>Listing in the Chamber's online directory.</li>
+                        <li>Regular updates on industry news and local events.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+       <div class="logo-footer"><img src="../chamber/images/logo.webp" width="400" height="200" alt="Logo"></div> 
+       <div class="grid-footer">
+            <div class="contact-info">
+                <h3>Contact Information:</h3>
+                <p>l_abelenda@hotmail.com</p>
+                <p>+598 99 889 597</p>
+                <p>📌 Location Map</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><img src="images/Facebook_icon.webp" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/"><img src="images/Instagram_icon.webp" alt="instagram icon"></a>
+            </div>
+        </div>
+        <div class="basefooter">
+            &copy; <span id="year"></span> Leticia Abelenda |
+            WDD 230 Project | <span id="lastModified"></span>
+        </div>
+    </footer>
+</body>
+<script src="scripts/getdates.js"></script>
+<script src="scripts/windchill.js"></script>
+</html>

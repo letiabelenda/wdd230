@@ -361,3 +361,161 @@ div.visits{
     background-color: var(--fourth-color);
     color: var(--main-color);
 }
+
+/* Join */
+
+.container-form {
+    background-color: var(--fifth-color);
+    padding: 0;
+    margin: 0;
+}
+
+.grid-join {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form fieldset {
+    margin: 2rem;
+    border: 1px solid rgb(186, 188, 186);
+    border-radius: 10px;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    color: var(--main-color);
+    font-family: var(--subtitles);
+    font-size: 30px;
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    font-size: 20px;
+    color: var(--main-color);
+    font-family: var(--text);
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1.5rem;
+    border: solid 1px var(--second-color);
+    border-radius: 4px;
+    color: var(--main-color);
+    width: 100%;
+    max-width: 20rem;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0, 1);
+    font-family: var(--text);
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--third-color);
+    color: white;
+    font-size: 30px;
+    font-family: var(--text);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    margin-left: 5rem;
+    width: 50%;
+}
+
+form input.submitBtn:hover {
+    background-color: var(--main-color);
+}
+
+form label.top input:required{
+    border-left: red solid 6px;
+
+}
+
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
+
+form fieldset textarea{
+    width: 100%;
+}
+
+div.container-membership{
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-membership h3{
+    text-align: center;
+    font-family: var(--titles);
+    letter-spacing: 3px;
+}
+
+.container-membership div{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--text);
+}
+
+.container-membership li {
+    padding: 0.3rem;
+}
+
+.radio-memb{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.radios{
+    border: none;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+.container-membership h2{
+    text-align: center;
+    font-family: var(--titles);
+    letter-spacing: 3px;
+    color: var(--main-color);
+    -webkit-text-stroke: 1px white;
+    text-decoration: underline blue;
+}
+
+.gold h3 {
+    text-decoration: underline yellow;
+}
+
+.silver h3 {
+    text-decoration: underline white;
+}
+
+.bronze h3 {
+    text-decoration: underline orange;
+}
+
+.container-membership p{
+    padding: 14px;
+}
+
+.thanksmessage {
+    background-color: var(--second-color);
+    color: white;
+}
+
+.thanksmessage h1{
+    text-align: center;
+    font-family: var(--titles);
+    letter-spacing: 3px;
+}
+
+.thanksmessage p{
+    padding: 1rem;
+    font-family: var(--text);
+    font-size: 1.5rem;
+}
