@@ -323,9 +323,7 @@ div.visits{
     background-color: var(--fourth-color);
 }
 
-}
-
-/* Join */
+    /* Join */
 
 .grid-join{
     display: grid;
@@ -355,3 +353,6 @@ div.container-membership{
     font-family: var(--text);
     font-size: 2rem;
 }
+
+}
+
