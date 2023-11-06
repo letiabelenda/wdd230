@@ -4,7 +4,7 @@
             "lesson": "01",
             "links": [
                 {
-                    "url":"https://letiabelenda.github.io/wdd230/lesson01/holygrail.html",
+                    "url":"lesson01/holygrail.html",
                     "title":"HolyGrial"
                 }
             ]
@@ -13,11 +13,11 @@
             "lesson": "02",
             "links": [
                 {
-                    "url":"https://letiabelenda.github.io/wdd230/lesson02/design.html",
+                    "url":"lesson02/design.html",
                     "title":"Design"
                 },
                 {
-                    "url":"https://letiabelenda.github.io/wdd230/lesson02/design-principles.html",
+                    "url":"lesson02/design-principles.html",
                     "title":"Design Principles Document"
                 }
             ]
