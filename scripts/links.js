@@ -22,7 +22,7 @@ function displayLinks(weeks) {
     week.links.forEach(link => {
       const linkItem = document.createElement("li");
       const linkAnchor = document.createElement("a");
-      linkAnchor.href = baseURL + link.url;
+      linkAnchor.href = link.url;
       linkAnchor.textContent = link.title;
 
       linkItem.appendChild(linkAnchor);
