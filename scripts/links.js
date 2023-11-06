@@ -1,4 +1,3 @@
-const baseURL = "https://letiabelenda.github.io/wdd230/";
 const linksURL = "https://letiabelenda.github.io/wdd230/data/links.json";
 
 async function getLinks() {
