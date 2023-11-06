@@ -1,0 +1,18 @@
+{
+    "familyName" : "Dacoli",
+    "dateOfMoved" : "08-November-2017",
+    "numFamilyMembers" : "2",
+    "visitedByBishopric" : "true",
+    "familyMembers" : [
+        {
+            "name" : "David",
+            "gender" : "Male",
+            "birthDate" : "30-July-1984"
+        },
+        {
+            "name" : "Leticia",
+            "gender" : "Female",
+            "birthDate" : "04-November-1994"
+        }
+    ]
+}
