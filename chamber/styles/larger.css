@@ -357,16 +357,26 @@ div.container-membership{
 /* Directory */
 
 .cards.grid h2{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: 10px 0;
 }
 
 .cards.grid p{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 5px 0;
 }
 .cards.grid a{
-    font-size:20px ;
+    font-size: 1.3rem;
     text-align: center;
-    
+    display: block;
+    margin: 10px 0;
+    color: #0074D9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.cards.grid a:hover {
+    color: #0056b3;
 }
 
 .cards.list {
@@ -374,18 +384,40 @@ div.container-membership{
     flex-direction: column;
     align-items: center;
     width: 100%;
-   
 }
+
 .cards.list section{
-    border: none;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.cards.list h2 {
+    font-size: 1.5rem; 
+    margin: 10px 0;
 }
   
+.cards.list p {
+    font-size: 1rem; 
+    margin: 5px 0;
+}
+
+.cards.list a {
+    font-size: 1rem; 
+    display: block;
+    margin: 10px 0;
+    color: #0074D9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
 .directory-title h1{
     text-align: center;
     font-family: var(--titles);
     color: var(--second-color);
     letter-spacing: 3px;
-    font-size: 4rem;
+    font-size: 3rem;
+    margin: 20px 0;
 }
 }
 
