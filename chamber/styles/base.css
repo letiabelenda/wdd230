@@ -560,10 +560,10 @@ div.cards{
 
 .cards a{
     font-size: 1rem;
-    color: #0074D9; /* Enlace azul */
+    color: #0074D9;
     text-decoration: none;
     transition: color 0.3s;
-    font-family: var(--text);
+    font-family: var(--titles);
     color: var(--second-color);
 }
 
