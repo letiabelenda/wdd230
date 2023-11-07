@@ -563,7 +563,7 @@ div.cards{
     color: #0074D9;
     text-decoration: none;
     transition: color 0.3s;
-    font-family: var(--titles);
+    font-family: var(--subtitles);
     color: var(--second-color);
 }
 
