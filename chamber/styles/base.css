@@ -537,7 +537,7 @@ div.cards{
 }
 
 .cards section{
-    background-color: #fff;
+    background-color: #ffffff;
     border: 1px solid #ccc;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -587,7 +587,7 @@ div.cards{
 .cards.list section {
     margin: 0;
     padding: 0;
-    background-color: var(--fifth-color);
+    background-color: #fff;
     text-align: start;
     width: 100%;
 }
@@ -606,7 +606,7 @@ padding-left:1rem;
 }
 
 .cards.list section:nth-child(even) {
-background-color: rgb(245, 242, 242);
+background-color: rgb(255, 255, 255);
 }
 
 .cards.list section:hover {
