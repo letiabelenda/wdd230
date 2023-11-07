@@ -529,39 +529,46 @@ div.cards{
 }
 
 .cards  {
-    display: grid;grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
 }
 
 .cards section{
-    max-width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    border: 1px solid var(--second-color);
-    padding: 2rem;
-    background-color: #fffcfc;
-    margin:1rem;
-    box-shadow: 5px 5px rgb(0,0,0,.5);
 }
 
 .cards section h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
     font-family: var(--titles);
     color: var(--second-color);
 }
 
 .cards p{
-    font-size: 20px;
-    padding: 1rem;
-    margin: 1rem;
+    font-size: 1rem;
+    margin: 8px 0;
     font-family: var(--text);
 }
+
 .cards a{
-    font-size: 18px;
-    padding: 1rem;
-    margin: 0;
+    font-size: 1rem;
+    color: #0074D9; /* Enlace azul */
+    text-decoration: none;
+    transition: color 0.3s;
     font-family: var(--text);
     color: var(--second-color);
+}
+
+.cards a:hover {
+    color: #0056b3;
 }
 
 .cards img{
@@ -575,7 +582,7 @@ div.cards{
     display: flex;
     flex-direction: column;
     
-  }
+}
   
 .cards.list section {
     margin: 0;
@@ -589,13 +596,13 @@ div.cards{
 font-size: 1.3rem;
 padding-left:1rem;
 }
+
 .cards.list section  p{
     font-size: 20px;
    
 }
 .cards.list section a{
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 
 .cards.list section:nth-child(even) {
@@ -609,24 +616,34 @@ box-shadow: 10px 10px 10px 10px rgb(124, 124, 124, 0.8);
 .cards.list img{ display: none;
 }
 
-#grid{
-    margin: .5rem;
-    padding: .5rem;
+#grid, #list {
+    background-color: #0074D9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
-#list{
-    margin:.5rem;
-    padding: .4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+#list {
+    margin-left: 10px;
 }
 
 .flexbox {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .flexbox button{
     font-family: var(--text);
-    font-size: 15px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.flexbox button:hover {
+    background-color: #0056b3;
 }
