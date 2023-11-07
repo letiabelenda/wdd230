@@ -53,7 +53,7 @@ function displayMembers(members) {
 // Grid and List buttons
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.querySelector(".cards");
 
 
 
