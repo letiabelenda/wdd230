@@ -568,7 +568,7 @@ div.cards{
 }
 
 .cards a:hover {
-    color: #0056b3;
+    color: red;
 }
 
 .cards img{
