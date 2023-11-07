@@ -1,4 +1,4 @@
-const url = 'https://letiabelenda.github.io/wdd230/chamber/scripts/members.json';
+const url = 'https://letiabelenda.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('cards');
 
 async function getMembersData() {
