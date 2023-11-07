@@ -5,7 +5,7 @@
             "adress": "Magariños Cervantes 2052",
             "phone": "2481 94 73",
             "website": "https://www.disco.com.uy",
-            "image": "disco-logo.webp",
+            "image": "https://letiabelenda.github.io/wdd230/chamber/images/disco-logo.webp",
             "membership": "Gold",
             "other-info": "atencionalcliente@disco.com.uy"
         },
@@ -14,7 +14,7 @@
             "adress": "José Ellauri 350",
             "phone": "2710 45 19",
             "website": "https://www.donpeperone.com.uy/",
-            "image": "donPeperone-logo.webp",
+            "image": "https://letiabelenda.github.io/wdd230/chamber/images/donPeperone-logo.webp",
             "membership": "Gold",
             "other-info": "sugerencias@donpeperone.com.uy"
         },
@@ -23,7 +23,7 @@
             "adress": "Av. 18 de Julio 1213",
             "phone": "+598 97 874 032",
             "website": "https://only.com.uy/",
-            "image": "Only-logo.webp",
+            "image": "https://letiabelenda.github.io/wdd230/chamber/images/Only-logo.webp",
             "membership": "Gold",
             "other-info": "contacto_only@bestseller.com"
         },
@@ -32,7 +32,7 @@
             "adress": "Guatemala 1075 Complejo Torre de las Telecomunicaciones",
             "phone": "+ 598 2711 67 11",
             "website": "https://www.antel.com.uy/",
-            "image": "antel-logo.webp",
+            "image": "https://letiabelenda.github.io/wdd230/chamber/images/antel-logo.webp",
             "membership": "Silver",
             "other-info": "Instagram - anteldetodos"
         },
@@ -41,7 +41,7 @@
             "adress": "Paraguay 2431",
             "phone": "+598 2155",
             "website": "https://www.ute.com.uy/",
-            "image": "ute-logo.webp",
+            "image": "https://letiabelenda.github.io/wdd230/chamber/images/ute-logo.webp",
             "membership": "Silver",
             "other-info": "ute@ute.com.uy"
         },
@@ -50,7 +50,7 @@
             "adress": "Dr. Luis Alberto de Herrera 3365, level 3",
             "phone": "+598 94 409 654",
             "website": "https://jackjones.com.uy/",
-            "image": "jackjones-logo.webp",
+            "image": "https://letiabelenda.github.io/wdd230/chamber/images/jackjones-logo.webp",
             "membership": "Bronze",
             "other-info": "ute@ute.com.uy"
         },
@@ -59,7 +59,7 @@
             "adress": "Bv. Gral. Artigas 1825",
             "phone": "+598 099 046 417",
             "website": "https://www.tata.com.uy/",
-            "image": "tata-logo.webp",
+            "image": "https://letiabelenda.github.io/wdd230/chamber/images/tata-logo.webp",
             "membership": "Bronze",
             "other-info": "servicioalcliente@tata.com.uy"
         },
@@ -68,7 +68,7 @@
             "adress": "Ellauri 438",
             "phone": "2716 89 10",
             "website": "https://tranquera.com.uy/",
-            "image": "tranquera-logo.webp",
+            "image": "https://letiabelenda.github.io/wdd230/chamber/images/tranquera-logo.webp",
             "membership": "NP",
             "other-info": "info@tranquera.com.uy"
         }
