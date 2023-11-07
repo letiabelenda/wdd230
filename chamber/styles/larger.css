@@ -355,7 +355,32 @@ div.container-membership{
 }
 
 /* Directory */
-directory-title h1{
+
+.cards.grid h2{
+    font-size: 3rem;
+}
+
+.cards.grid p{
+    font-size: 2rem;
+}
+.cards.grid a{
+    font-size:20px ;
+    text-align: center;
+    
+}
+
+.cards.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   
+}
+.cards.list section{
+    border: none;
+}
+  
+.directory-title h1{
     text-align: center;
     font-family: var(--titles);
     color: var(--second-color);
