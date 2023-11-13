@@ -1,12 +1,12 @@
-function bannerDay() {
+function isBannerDay() {
     const today = new Date();
     const dayOfWeek = today.getDay();
-    return dayOfWeek >= 1 && dayOfWeek <= 3; // Monday is 1, Tuesday is 2, Wednesday is 3
+    return dayOfWeek >= 1 && dayOfWeek <= 3; // Monday = 1, Tuesday = 2, Wednesday = 3
 }
 
-function bannerVisibility() {
+function updateBannerVisibility() {
     const banner = document.getElementById('banner');
-    if (bannerDay()) {
+    if (isBannerDay()) {
         banner.style.display = 'block';
     } else {
         banner.style.display = 'none';
@@ -19,4 +19,4 @@ function closeBanner() {
     banner.style.display = 'none';
 }
 
-window.onload = bannerVisibility;
+window.onload = updateBannerVisibility;
