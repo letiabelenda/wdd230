@@ -35,40 +35,46 @@ function displayResults(data){
     weatherIcon.appendChild(icono)
 }
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=Montevideo&units=imperial&appid=0a65e95b7d2094ce2cd33a12b03b9c98&units=metric&units=metric`)
-.then(response => response.json())
-.then(data => {
+fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Montevideo&units=metric&appid=0a65e95b7d2094ce2cd33a12b03b9c98`)
+    .then(response => response.json())
+    .then(data => {
+        const forecast = document.querySelector(".forecasting");
+        
+        // filter data
+        const nextThreeDaysData = data.list.filter(entry => {
+            const currentDate = new Date();
+            const entryDate = new Date(entry.dt * 1000);
+            return entryDate.getDate() > currentDate.getDate();
+        });
 
-    data.list.forEach(day => {
-      let date = new Date(day.dt * 1000).toLocaleDateString();
-      let temperature = day.main.temp.toFixed(0);
-      let description = day.weather[0].description.toUpperCase();
-      let forecastIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`;
-      
+        // Iterate only for the next 3 days
+        for (let i = 0; i < 3; i++) {
+            const day = nextThreeDaysData[i];
 
-      let forecast = document.querySelector(".forecasting")
-      let fores = document.createElement("div");
-      let dateForecast = document.createElement("p");
-      let icons = document.createElement("img");
-      let temper = document.createElement("p")
-      let descr = document.createElement("p");
+            let date = new Date(day.dt * 1000).toLocaleDateString();
+            let temperature = day.main.temp.toFixed(0);
+            let description = day.weather[0].description.toUpperCase();
+            let forecastIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`;
 
-      
-      icons.setAttribute('src', forecastIcon);
-      icons.setAttribute('alt', description);
-      icons.setAttribute('loading', 'lazy');
-      dateForecast.textContent = date;
-      temper.textContent = temperature + "°C"
-      descr.textContent = description
+            // Creating HTML elements
+            let fores = document.createElement("div");
+            let dateForecast = document.createElement("p");
+            let icons = document.createElement("img");
+            let temper = document.createElement("p");
+            let descr = document.createElement("p");
 
-      
-      fores.appendChild(icons)
-      fores.appendChild(dateForecast)      
-      fores.appendChild(temper)
-      fores.appendChild(descr)     
-      
+            icons.setAttribute('src', forecastIcon);
+            icons.setAttribute('alt', description);
+            icons.setAttribute('loading', 'lazy');
+            dateForecast.textContent = date;
+            temper.textContent = temperature + "°C";
+            descr.textContent = description;
 
-      forecast.appendChild(fores)
+            fores.appendChild(icons);
+            fores.appendChild(dateForecast);
+            fores.appendChild(temper);
+            fores.appendChild(descr);
 
-    })
-  });
+            forecast.appendChild(fores);
+        }
+    });
