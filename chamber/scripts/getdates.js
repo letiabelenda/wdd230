@@ -75,19 +75,3 @@ localStorage.setItem('visits-ls', numVisits);
 localStorage.setItem('last-visit-date', currentYear);
 
 // Banner
-
-document.addEventListener('DOMContentLoaded', function () {
-    const meetingBanner = document.getElementById('meetingBanner');
-    const closeBannerBtn = document.getElementById('closeBannerBtn');
-
-    // Verificar si hoy es lunes, martes o miércoles
-    const today = new Date().getDay();
-    if (today >= 1 && today <= 3) {
-        meetingBanner.style.display = 'flex';
-    }
-
-    // Agregar evento para cerrar el banner
-    closeBannerBtn.addEventListener('click', () => {
-        meetingBanner.style.display = 'none';
-    });
-});

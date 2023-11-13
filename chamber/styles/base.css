@@ -262,6 +262,32 @@ h2{
 }
 
 /* Banner */
+header {
+    position: relative;
+}
+
+.banner {
+    display: none;
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.banner p {
+    margin: 0;
+}
+
+.close-btn {
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+}
 
 /* Footer */
 
