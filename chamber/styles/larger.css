@@ -77,6 +77,19 @@
         width: 60px;
     }
 
+    /* Banner */
+    div .banner.open {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner.open {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        border: none;
+    }
+
     /* Main */
     
     .hero img{

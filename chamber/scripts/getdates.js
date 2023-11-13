@@ -74,4 +74,11 @@ visitsDisplay.textContent = numVisits;
 localStorage.setItem('visits-ls', numVisits);
 localStorage.setItem('last-visit-date', currentYear);
 
+// Banner
 
+const banner = document.querySelector('.banner');
+
+const actualDay = d.getDay();
+if (actualDay === 1 || actualDay === 3) {
+    banner.classList.add('open');
+}

@@ -261,6 +261,24 @@ h2{
     font-family: var(--text);
 }
 
+/* Banner */
+.banner {    
+    grid-column: 1/-1;
+    background-color: var(--main-color);
+    border: 1px solid #614F5D;
+    color: var(--fourth-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+  
+.banner{
+    display: none;
+}
+  
+.banner.open{
+    display: block;
+}
+
 /* Footer */
 
 footer{
