@@ -76,9 +76,14 @@ localStorage.setItem('last-visit-date', currentYear);
 
 // Banner
 
-const banner = document.querySelector('.banner');
+const meetingBanner = document.getElementById('meetingBanner');
+    const closeBannerBtn = document.getElementById('closeBannerBtn');
 
-const actualDay = d.getDay();
-if (actualDay === 1 || actualDay === 3) {
-    banner.classList.add('open');
-}
+    const today = new Date().getDay();
+    if (today >= 1 && today <= 3) {
+        meetingBanner.style.display = 'flex';
+    }
+
+    closeBannerBtn.addEventListener('click', () => {
+        meetingBanner.style.display = 'none';
+    });

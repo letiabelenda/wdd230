@@ -262,23 +262,34 @@ h2{
 }
 
 /* Banner */
-.banner {    
+.banner {
+    display: none;
     grid-column: 1/-1;
     background-color: var(--main-color);
     border: 1px solid #614F5D;
     color: var(--fourth-color);
     font-size: 1.5rem;
     text-align: center;
-}
-  
-.banner{
-    display: none;
-}
-  
-.banner.open{
-    display: block;
+    position: relative;
 }
 
+.banner.open {
+    display: flex;
+}
+
+.banner p {
+    margin: 0;
+}
+
+.banner button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
 /* Footer */
 
 footer{
