@@ -23,7 +23,7 @@ apiFetch();
 function displayResults(data){
     const desc = data.weather[0].description.toUpperCase();
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
-    currentTemp.innerHTML = ((`${weatherData.main.temp}` -32) /1.8).toFixed(0);
+    currentTemp.innerHTML = ((`${data.main.temp}` -32) /1.8).toFixed(0);
     captionDesc.innerHTML = `<p>Description: <strong>${desc}</stron></p>`;
     temperature = currentTemp;
     
