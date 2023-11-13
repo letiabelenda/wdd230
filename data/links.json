@@ -116,6 +116,15 @@
                     "title":"Prophets"
                 }
             ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url":"https://letiabelenda.github.io/wdd230/lesson10/weather.html",
+                    "title":"Weather"
+                }
+            ]
         }
 
     ]
