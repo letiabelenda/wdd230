@@ -271,6 +271,7 @@ h2{
     font-size: 1.5rem;
     text-align: center;
     position: relative;
+    padding: 10px;
 }
 
 .banner.open {
@@ -282,13 +283,11 @@ h2{
 }
 
 .banner button {
-    position: absolute;
-    top: 0;
-    right: 0;
     background: none;
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    color: var(--fourth-color);
 }
 /* Footer */
 
