@@ -168,11 +168,6 @@ section p {
 }
 
 /* Weather */
-.weather {
-    display: flex;
-    flex-direction: column;
-}
-
 .weather-container{
     display: flex;
     flex-direction: column;
@@ -187,6 +182,9 @@ section p {
 
 figure{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {

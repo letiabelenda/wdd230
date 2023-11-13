@@ -24,8 +24,8 @@ apiFetch();
 function displayResults(data){
     const desc = data.weather[0].description.toUpperCase();
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
-    currentTemp.innerHTML = `<p>Current Temperature: ${data.main.temp.toFixed(0)} °F </p>`;
-    captionDesc.innerHTML = `<p>Description: ${desc}</p>`;
+    currentTemp.innerHTML = `<p>Current Temperature: <strong>${data.main.temp.toFixed(0)} °F</stron></p>`;
+    captionDesc.innerHTML = `<p>Description: <strong>${desc}</stron></p>`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
 }
