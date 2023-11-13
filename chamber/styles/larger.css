@@ -109,6 +109,12 @@
     .weather {
         border-radius: 0%;
         border-style: dotted;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+         width: 50%;
+        margin: 0 auto;
     }
 
     .events{
