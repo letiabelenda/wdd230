@@ -54,12 +54,13 @@
                 Number of visits: 
                 <span class="visits"></span>
             </p>
-            <h4>Weather</h4>
-            <section class="weather">
-                <p class="temperature">45</p>
-                <p class="wind-speed">5.0</p>
-                <p class="wind-chill">Wind Chill: Calculating...</p>
-              </section>
+            <div class="weather-container"></div><h4>Weather</h4>
+                <span id="current-temp"></span>
+                <figure>
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption></figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <div class="map">
@@ -78,6 +79,6 @@
     </footer>
 </body>
 <script src="scripts/getdates.js"></script>
-<script src="scripts/windchill.js"></script>
+<script src="scripts/weather.js"></script>
 <script src="scripts/links.js"></script>
 </html>
