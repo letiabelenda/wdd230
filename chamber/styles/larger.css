@@ -106,6 +106,7 @@
         height: 20%;
     }
     
+    /* Weather */
     .weather {
         border-radius: 0%;
         border-style: dotted;
@@ -116,7 +117,7 @@
          width: 50%;
         margin: 0 auto;
     }
-
+    
     .events{
         grid-column: 1;
         grid-row: 1;

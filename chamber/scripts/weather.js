@@ -34,3 +34,41 @@ function displayResults(data){
 
     weatherIcon.appendChild(icono)
 }
+
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=Montevideo&units=imperial&appid=0a65e95b7d2094ce2cd33a12b03b9c98&units=metric&units=metric`)
+.then(response => response.json())
+.then(data => {
+
+    data.list.forEach(day => {
+      let date = new Date(day.dt * 1000).toLocaleDateString();
+      let temperature = day.main.temp.toFixed(0);
+      let description = day.weather[0].description.toUpperCase();
+      let forecastIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`;
+      
+
+      let forecast = document.querySelector(".forecasting")
+      let fores = document.createElement("div");
+      let dateForecast = document.createElement("p");
+      let icons = document.createElement("img");
+      let temper = document.createElement("p")
+      let descr = document.createElement("p");
+
+      
+      icons.setAttribute('src', forecastIcon);
+      icons.setAttribute('alt', description);
+      icons.setAttribute('loading', 'lazy');
+      dateForecast.textContent = date;
+      temper.textContent = temperature + "°C"
+      descr.textContent = description
+
+      
+      fores.appendChild(icons)
+      fores.appendChild(dateForecast)      
+      fores.appendChild(temper)
+      fores.appendChild(descr)     
+      
+
+      forecast.appendChild(fores)
+
+    })
+  });
