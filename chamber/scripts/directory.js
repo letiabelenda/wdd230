@@ -20,6 +20,7 @@ fetch(url)
         let phone = document.createElement('p');
         let memb = document.createElement('p');
         let website = document.createElement('a');
+        let otherinfo = document.createElement('p');
     
         //Change the textContent property of the h2 element to contain the companies name
         h2.textContent = clients.name;
@@ -36,6 +37,7 @@ fetch(url)
         phone.textContent = clients.phonenumber
         website.textContent = clients.website
         memb.textContent = " Membership Level:" + " " + clients.membership
+        otherinfo.textContent = clients.other;
     
         //Add the section(card) with the elements
     
@@ -45,6 +47,7 @@ fetch(url)
         card.appendChild(phone);
         card.appendChild(memb);
         card.appendChild(website);
+        card.appendChild(otherinfo);
     
         document.querySelector('article.cards').appendChild(card);
     };
