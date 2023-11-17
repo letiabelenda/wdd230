@@ -73,5 +73,3 @@ if (!lastVisitDate) {
 visitsDisplay.textContent = numVisits;
 localStorage.setItem('visits-ls', numVisits);
 localStorage.setItem('last-visit-date', currentYear);
-
-// Banner
