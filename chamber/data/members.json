@@ -1,76 +1,76 @@
 {
-    "members": [
+    "clients": [
         {
             "name": "Disco",
             "adress": "Magariños Cervantes 2052",
-            "phone": "2481 94 73",
+            "phonenumber": "2481 94 73",
             "website": "https://www.disco.com.uy",
-            "image": "images/disco-logo.webp",
+            "imageUrl": "images/disco-logo.webp",
             "membership": "Gold",
-            "other-info": "atencionalcliente@disco.com.uy"
+            "other": "atencionalcliente@disco.com.uy"
         },
         {
             "name": "Don Peperone",
             "adress": "José Ellauri 350",
-            "phone": "2710 45 19",
+            "phonenumber": "2710 45 19",
             "website": "https://www.donpeperone.com.uy/",
-            "image": "images/donPeperone-logo.webp",
+            "imageUrl": "images/donPeperone-logo.webp",
             "membership": "Gold",
-            "other-info": "sugerencias@donpeperone.com.uy"
+            "other": "sugerencias@donpeperone.com.uy"
         },
         {
             "name": "Only",
             "adress": "Av. 18 de Julio 1213",
-            "phone": "+598 97 874 032",
+            "phonenumber": "+598 97 874 032",
             "website": "https://only.com.uy/",
-            "image": "images/Only-logo.webp",
+            "imageUrl": "images/Only-logo.webp",
             "membership": "Gold",
-            "other-info": "contacto_only@bestseller.com"
+            "other": "contacto_only@bestseller.com"
         },
         {
             "name": "ANTEL",
             "adress": "Guatemala 1075 Complejo Torre de las Telecomunicaciones",
-            "phone": "+ 598 2711 67 11",
+            "phonenumber": "+ 598 2711 67 11",
             "website": "https://www.antel.com.uy/",
-            "image": "images/antel-logo.webp",
+            "imageUrl": "images/antel-logo.webp",
             "membership": "Silver",
-            "other-info": "Instagram - anteldetodos"
+            "other": "Instagram - anteldetodos"
         },
         {
             "name": "UTE",
             "adress": "Paraguay 2431",
-            "phone": "+598 2155",
+            "phonenumber": "+598 2155",
             "website": "https://www.ute.com.uy/",
-            "image": "images/ute-logo.webp",
+            "imageUrl": "images/ute-logo.webp",
             "membership": "Silver",
-            "other-info": "ute@ute.com.uy"
+            "other": "ute@ute.com.uy"
         },
         {
             "name": "Jack&Jones",
             "adress": "Dr. Luis Alberto de Herrera 3365, level 3",
-            "phone": "+598 94 409 654",
+            "phonenumber": "+598 94 409 654",
             "website": "https://jackjones.com.uy/",
-            "image": "images/jackjones-logo.webp",
+            "imageUrl": "images/jackjones-logo.webp",
             "membership": "Bronze",
-            "other-info": "ute@ute.com.uy"
+            "other": "ute@ute.com.uy"
         },
         {
             "name": "TATA",
             "adress": "Bv. Gral. Artigas 1825",
-            "phone": "+598 099 046 417",
+            "phonenumber": "+598 099 046 417",
             "website": "https://www.tata.com.uy/",
-            "image": "images/tata-logo.webp",
+            "imageUrl": "images/tata-logo.webp",
             "membership": "Bronze",
-            "other-info": "servicioalcliente@tata.com.uy"
+            "other": "servicioalcliente@tata.com.uy"
         },
         {
             "name": "Tranquera",
             "adress": "Ellauri 438",
-            "phone": "2716 89 10",
+            "phonenumber": "2716 89 10",
             "website": "https://tranquera.com.uy/",
-            "image": "images/tranquera-logo.webp",
+            "imageUrl": "images/tranquera-logo.webp",
             "membership": "NP",
-            "other-info": "info@tranquera.com.uy"
+            "other": "info@tranquera.com.uy"
         }
         
     ]
