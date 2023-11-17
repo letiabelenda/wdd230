@@ -1,5 +1,5 @@
 const url = 'https://letiabelenda.github.io/wdd230/chamber/data/members.json';
-const cards = document.querySelector('cards');
+const cards = document.querySelector('.cards');
 
 fetch(url)
     .then(function (response){
@@ -35,7 +35,7 @@ fetch(url)
         adress.textContent = clients.adress
         phone.textContent = clients.phonenumber
         website.textContent = clients.website
-        memb.textContent = " Membership Level:" + " " + clients.membershiplevel
+        memb.textContent = " Membership Level:" + " " + clients.membership
     
         //Add the section(card) with the elements
     
