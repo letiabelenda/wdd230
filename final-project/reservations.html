@@ -37,7 +37,44 @@
       
           <section>
             <h2>Rental Details Form</h2>
-            <!-- Form to collect rental details -->
+            <form action="gracias.html" method="get">
+                <label for="rentalDate">Date:</label>
+                <input type="date" id="rentalDate" name="rentalDate" required><br><br>
+        
+                <label for="rentalPeriod">Rental Period:</label>
+                <select id="rentalPeriod" name="rentalPeriod" required>
+                  <option value="halfDay">Half Day</option>
+                  <option value="fullDay">Full Day</option>
+                </select><br><br>
+        
+                <label for="rentalType">Rental Type:</label>
+                <!-- <select id="rentalType" name="rentalType" required> -->
+                  <!-- Options will be dynamically populated from the JSON data or manually added -->
+                <!-- </select><br><br> -->
+        
+                <label for="numberOfRentals">Number of Rentals:</label>
+                <input type="number" id="numberOfRentals" name="numberOfRentals" min="1" required><br><br>
+        
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+        
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="homeLocation">Home State or Country:</label>
+                <input type="text" id="homeLocation" name="homeLocation" required><br><br>
+        
+                <label for="cruiseLine">Cruise Line (if applicable):</label>
+                <input type="text" id="cruiseLine" name="cruiseLine"><br><br>
+        
+                <label for="specialAccommodations">Special Accommodations/Comments:</label><br>
+                <textarea id="specialAccommodations" name="specialAccommodations" rows="4" cols="50"></textarea><br><br>
+        
+                <input type="submit" value="Submit">
+              </form>
             <form id="reservationForm">
               <!-- Form fields for rental details -->
               <!-- Use CSS Grid or Flex for layout -->

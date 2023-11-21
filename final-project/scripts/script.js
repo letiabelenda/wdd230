@@ -21,3 +21,24 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const reservationForm = document.getElementById('reservationForm');
+  
+    reservationForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      const date = document.getElementById('rentalDate').value;
+      const period = document.getElementById('rentalPeriod').value;
+      const rentalType = document.getElementById('rentalType').value;
+      const numberOfRentals = document.getElementById('numberOfRentals').value;
+      const phoneNumber = document.getElementById('phoneNumber').value;
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const homeLocation = document.getElementById('homeLocation').value;
+      const cruiseLine = document.getElementById('cruiseLine').value;
+      const specialAccommodations = document.getElementById('specialAccommodations').value;
+
+      window.location.href = "gracias.html";
+    });
+});
