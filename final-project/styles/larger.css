@@ -13,6 +13,10 @@
         z-index: 1;
     }
 
+    .nav-links.show {
+        display: block;
+    }
+
     .nav-links ul {
         flex-direction: column;
         padding: 0;
