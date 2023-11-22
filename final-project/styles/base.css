@@ -31,6 +31,8 @@ nav-links ul li a {
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
+    display: block;
+    padding: 10px 0;
 }
 
 nav-links ul li a:hover {
