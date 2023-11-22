@@ -44,4 +44,8 @@
     .call-action:hover {
         background-color: #e55e00;
     }
+
+    #home img {
+        position: absolute;
+    }
 }
