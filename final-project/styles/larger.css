@@ -25,4 +25,22 @@
     .nav-links ul li {
         margin: 10px 0;
     }
+
+    /* Hero section */
+    .hero {
+        text-align: left;
+    }
+
+    .hero-image {
+        height: auto;
+    }
+
+    .call-action {
+        position: relative; 
+        width: 80%; 
+        margin: 20px auto; 
+        top: unset; 
+        left: unset; 
+        transform: unset;
+    }
 }
