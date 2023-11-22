@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
   hamburger.addEventListener('click', function () {
       navLinks.classList.toggle('show');
   });
+
+  const navLinksList = document.querySelectorAll('.nav-links ul li a');
+  navLinksList.forEach(function (link) {
+      link.addEventListener('click', function () {
+          navLinks.classList.remove('show');
+      });
+  });
 });
 
 // Rentals table
