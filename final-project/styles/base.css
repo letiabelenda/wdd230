@@ -3,7 +3,32 @@ header {
     padding: 20px;
     text-align: center;
 }
-  
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin: 0 15px;
+}
+
+
+
 .logo h1 {
     margin: 0;
     font-size: 2em;

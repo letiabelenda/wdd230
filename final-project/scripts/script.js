@@ -1,3 +1,13 @@
+// Hamburger menu
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', function () {
+      navLinks.classList.toggle('show');
+  });
+});
+
 // Rentals table
 document.addEventListener('DOMContentLoaded', function () {
     fetch('data/rentals.json')
