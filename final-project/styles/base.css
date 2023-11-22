@@ -1,0 +1,72 @@
+header {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+  
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+  
+main {
+    padding: 20px;
+}
+  
+section {
+    margin-bottom: 30px;
+}
+  
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+  
+.rental-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.rental-type {
+    flex: 1 1 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.rental-type img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+  
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+  
+.privacy a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
