@@ -1,12 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&family=Quicksand&display=swap');
+
+:root{
+    --titles: 'Playpen Sans', cursive;
+    --text: 'Quicksand', sans-serif;
+    --main-color: #22577A;
+    --second-color: #38A3A5;
+    --third-color: #57CC99;
+    --fourth-color: #80ED99;
+    --fifth-color: #C7F9CC;
+}
+
 #home {
     position: relative;
     overflow: hidden;
 }
 
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: var(--titles);
+    color: var(--main-color);
+}
+
 header {
-    background-color: #f7f7f7;
+    background-color: var(--second-color);
     padding: 20px;
     text-align: center;
+    font-family: var(--text);
 }
 
 /* Hamburger menu */
@@ -34,15 +55,16 @@ header {
 
 .nav-links ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--fifth-color);
+    font-family: var(--text);
     transition: color 0.3s ease, background-color 0.3s ease;
     display: block;
     padding: 10px 0;
 }
 
 .nav-links ul li a:hover {
-    color: #ff6600;
-    background-color: grey;
+    color: var(--third-color);
+    background-color: var(--second-color);
 }
 
 /* Hero section */
@@ -72,11 +94,12 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ff6600; 
-    color: #fff;
+    background-color: var(--third-color); 
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
+    font-family: var(--titles);
     border-radius: 5px;
     z-index: 2;
 }
