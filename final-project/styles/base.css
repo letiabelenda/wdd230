@@ -45,12 +45,20 @@ header {
     position: relative;
     text-align: center;
     color: #fff;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .call-action {
