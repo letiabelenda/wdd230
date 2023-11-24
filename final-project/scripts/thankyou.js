@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         setTimeout(function () {
             thankYouMessage.style.display = 'none';
-        }, 3000);
+        }, 4000);
 
         form.reset();
     });
