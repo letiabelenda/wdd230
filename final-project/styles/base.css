@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
 
 :root{
-    --titles: 'Playpen Sans', cursive;
-    --text: 'Quicksand', sans-serif;
+    --titles: 'Rock Salt', cursive;
+    --text: 'Julius Sans One', sans-serif;
     --main-color: #22577A;
     --second-color: #38A3A5;
     --third-color: #57CC99;
@@ -191,7 +192,7 @@ section h2 {
 
 #rentals {
     text-align: center;
-    background-color: var(--fourth-color);
+    background-color: var(--fifth-color);
     font-family: var(--text);
 }
 
@@ -203,6 +204,7 @@ section h2 {
 
 h3 {
      font-family: var(--titles);
+     color: var(--main-color);
 }
   
 .rental-type {
@@ -225,7 +227,7 @@ h3 {
 .weather {
     text-align: center;
     font-size: 1.2rem;
-    background-color: var(--fifth-color);
+    background-color: var(--fourth-color);
 }
 
 footer {
