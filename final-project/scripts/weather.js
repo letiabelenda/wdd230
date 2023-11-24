@@ -3,29 +3,29 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=Cozumel&units=imperial&appid=0a65e95b7d2094ce2cd33a12b03b9c98';
 
-async function apiFetch(){
-    try{
+async function apiFetch() {
+    try {
         const response = await fetch(url);
-        if (response.ok){
+        if (response.ok) {
             const data = await response.json();
             console.log(data);
             displayResults(data);
-        } else{
+        } else {
             throw Error(await response.text());
         }
-
-    } catch (error){
+    } catch (error) {
         console.log(error);
     }
 }
 
 apiFetch();
 
-function displayResults(data){
+function displayResults(data) {
     const desc = data.weather[0].description.toUpperCase();
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
-    currentTemp.innerHTML = `<p>Current Temperature: <strong>${data.main.temp.toFixed(0)} °F</stron></p>`;
-    captionDesc.innerHTML = `<p>Description: <strong>${desc}</stron></p>`;
+    currentTemp.innerHTML = `<p>Current Temperature: <strong>${data.main.temp.toFixed(0)} °F</strong></p>`;
+    captionDesc.innerHTML = `<p>Description: <strong>${desc}</strong></p>`;
+    captionDesc.innerHTML += `<p>Humidity: <strong>${data.main.humidity}%</strong></p>`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
 }
