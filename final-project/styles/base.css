@@ -336,7 +336,7 @@ input:required:valid {
     border-left: green solid 5px;
 }
 
-input[type="submit"] {
+button {
     background-color: var(--main-color);
     color: white;
     font-family: var(--titles);
@@ -346,6 +346,17 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: var(--second-color);
+}
+
+#thankYouMessage {
+    display: none;
+    background-color: white;
+    color: #3c763d;
+    border: 2px solid blue;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
