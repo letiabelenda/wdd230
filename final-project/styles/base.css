@@ -224,6 +224,11 @@ h3 {
     font-size: 1.2rem;
 }
 
+.conect-us p a img{
+    width: 25px;
+    padding: .2rem;
+}
+
 .weather {
     text-align: center;
     font-size: 1.2rem;
