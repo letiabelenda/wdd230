@@ -370,22 +370,25 @@ table {
 }
   
 thead {
-    background-color: var(--third-color);
-    color: white;
+    background-color: var(--fifth-color);
+    color: black;
 }
-  
-th, td {
+
+td {
     padding: 10px;
     border: 1px solid var(--second-color);
     text-align: center;
 }
-  
+
+th {
+    font-family: var(--titles);
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid var(--second-color);
+    text-align: center;
+}
+
 th[scope="colgroup"] {
     background-color: var(--third-color);
     color: white;
-}
-  
-th[scope="colgroup"], th[scope="row"] {
-    font-family: var(--titles);
-    font-weight: bold;
 }
