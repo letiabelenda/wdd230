@@ -31,14 +31,19 @@
             <table>
               <thead>
                 <tr>
-                  <th>Rental Type</th>
-                  <th>Max. Persons</th>
-                  <th>Half Day Price</th>
-                  <th>Full Day Price</th>
+                  <th rowspan="2">Rental Type</th>
+                  <th rowspan="2">Max. Persons</th>
+                  <th colspan="2">Reservation</th>
+                  <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                  <th>Half Day</th>
+                  <th>Full Day</th>
+                  <th>Half Day</th>
+                  <th>Full Day</th>
                 </tr>
               </thead>
               <tbody id="rentalsTable">
-                <!-- Rental information will be dynamically populated here from JSON data -->
               </tbody>
             </table>
           </section>
@@ -54,5 +59,4 @@
     </footer>
 </body>
 <script src="scripts/script.js"></script>
-</body>
 </html>

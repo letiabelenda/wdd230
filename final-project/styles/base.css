@@ -360,3 +360,32 @@ button:hover {
     border-radius: 5px;
     text-align: center;
 }
+
+/* RENTALS PAGE */
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+  
+thead {
+    background-color: var(--third-color);
+    color: white;
+}
+  
+th, td {
+    padding: 10px;
+    border: 1px solid var(--second-color);
+    text-align: center;
+}
+  
+th[scope="colgroup"] {
+    background-color: var(--third-color);
+    color: white;
+}
+  
+th[scope="colgroup"], th[scope="row"] {
+    font-family: var(--titles);
+    font-weight: bold;
+}
