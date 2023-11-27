@@ -362,6 +362,37 @@ button:hover {
 }
 
 /* RENTALS PAGE */
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.intro-content {
+    text-align: center;
+    max-width: 50%;
+    padding: 20px;
+    border: 2px dashed var(--second-color);
+    margin-right: 50px;
+}
+
+.image-container {
+    text-align: right;
+    max-width: 50%;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
 /* Table */
 table {
     width: 100%;
@@ -392,3 +423,4 @@ th[scope="colgroup"] {
     background-color: var(--third-color);
     color: white;
 }
+
