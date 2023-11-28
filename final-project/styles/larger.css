@@ -68,4 +68,8 @@
         flex: auto;
         width: 100%;
     }
+
+    .text ul {
+        font-size: 4vw;
+    }
 }
