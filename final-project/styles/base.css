@@ -522,3 +522,11 @@ output {
     color: var(--third-color);
     font-weight: bold;
 }
+
+input:required {
+    border-left: red solid 5px;
+}
+
+input:required:valid {
+    border-left: green solid 5px;
+}
