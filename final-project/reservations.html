@@ -26,68 +26,76 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Rental Agreement Information</h2>
-            <ul>
-              <li>A $50 security deposit is required to confirm reservations.</li>
-              <li>A valid drivers license is required in hand at the time of rental.</li>
-              <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-              <li>Fuel charge is not included.</li>
-              <li>Unlimited mileage.</li>
-              <li>Liability insurance is included.</li>
-              <li>Damage insurance is available for purchase.</li>
-              <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-              <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-              <li>Rentals may be returned to either physical location.</li>
-            </ul>
-          </section>
+        <section class="rental-agreement">
+          <h2>Rental Agreement Information</h2>
+          <div class="rental-info">
+            <div class="image">
+              <img src="images/reservations-img.webp" alt="Reservations Image" class="reservations-image">
+            </div>
+            <div class="text">
+              <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       
-          <section>
-            <h2>Rental Details Form</h2>
-            <form action="gracias.html" method="get">
-                <label for="rentalDate">Date:</label>
-                <input type="date" id="rentalDate" name="rentalDate" required><br><br>
+        <section>
+          <h2>Rental Form</h2>
+          <form id="contactForm" action="record.html" method="post">
+              <label for="rentalDate">Date:*</label>
+              <input type="date" id="rentalDate" name="rentalDate" required><br><br>
         
-                <label for="rentalPeriod">Rental Period:</label>
-                <select id="rentalPeriod" name="rentalPeriod" required>
-                  <option value="halfDay">Half Day</option>
-                  <option value="fullDay">Full Day</option>
-                </select><br><br>
+              <label for="rentalPeriod">Rental Period:*</label>
+              <select id="rentalPeriod" name="rentalPeriod" required>
+                <option value="halfDay">Half Day</option>
+                <option value="fullDay">Full Day</option>
+              </select><br><br>
         
-                <label for="rentalType">Rental Type:</label>
-                <select id="rentalType" name="rentalType" required>
-                    <option value="Honda Metro Scooter - 1 person">Honda Metro Scooter - 1 person</option>
-                    <option value="Honda Dio Scooter - 2 persons">Honda Dio Scooter - 2 persons</option>
-                    <option value="Honda PCX150 Scooter - 2 persons">Honda PCX150 Scooter - 2 persons</option>
-                    <option value="Honda Pioneer ATV - 4 persons">Honda PCX150 Scooter - 2 persons</option>
-                    <option value="Jeep Wrangler - 4 door with a/c - 5 persons">Jeep Wrangler - 4 door with a/c - 5 persons</option>
-                    <option value="Jeep Wrangler - 2 door - 4 persons">Jeep Wrangler - 2 door - 5 persons</option>
-                </select><br><br>
+              <label for="rentalType">Rental Type:*</label>
+              <select id="rentalType" name="rentalType" required>
+                  <option value="Honda Metro Scooter - 1 person">Honda Metro Scooter - 1 person</option>
+                  <option value="Honda Dio Scooter - 2 persons">Honda Dio Scooter - 2 persons</option>
+                  <option value="Honda PCX150 Scooter - 2 persons">Honda PCX150 Scooter - 2 persons</option>
+                  <option value="Honda Pioneer ATV - 4 persons">Honda PCX150 Scooter - 2 persons</option>
+                  <option value="Jeep Wrangler - 4 door with a/c - 5 persons">Jeep Wrangler - 4 door with a/c - 5 persons</option>
+                  <option value="Jeep Wrangler - 2 door - 4 persons">Jeep Wrangler - 2 door - 5 persons</option>
+              </select><br><br>
         
-                <label for="numberOfRentals">Number of Rentals:</label>
-                <input type="number" id="numberOfRentals" name="numberOfRentals" min="1" required><br><br>
+              <label for="numberOfRentals">Number of Rentals:*</label>
+              <input type="number" id="numberOfRentals" name="numberOfRentals" min="1" required><br><br>
         
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+              <label for="phoneNumber">Phone Number:*</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
         
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required><br><br>
+              <label for="fullName">Full Name:*</label>
+              <input type="text" id="fullName" name="fullName" required><br><br>
         
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+              <label for="email">Email:*</label>
+              <input type="email" id="email" name="email" required><br><br>
         
-                <label for="homeLocation">Home State or Country:</label>
-                <input type="text" id="homeLocation" name="homeLocation" required><br><br>
+              <label for="homeLocation">Home State or Country:*</label>
+              <input type="text" id="homeLocation" name="homeLocation" required><br><br>
         
-                <label for="cruiseLine">Cruise Line (if applicable):</label>
-                <input type="text" id="cruiseLine" name="cruiseLine"><br><br>
+              <label for="cruiseLine">Cruise Line (if applicable):</label>
+              <input type="text" id="cruiseLine" name="cruiseLine"><br><br>
         
-                <label for="specialAccommodations">Special Accommodations/Comments:</label><br>
-                <textarea id="specialAccommodations" name="specialAccommodations" rows="4" cols="50"></textarea><br><br>
+              <label for="specialAccommodations">Special Accommodations/Comments:</label><br>
+              <textarea id="specialAccommodations" name="specialAccommodations" rows="4" cols="50"></textarea><br><br>
         
-                <input type="submit" value="Rent now!">
-              </form>
-          </section>
+              <button type="submit">Rent Now!</button>
+            </form>
+            <div id="thankYouMessage" style="display: none;">Thank you for contact us! We will get back to you soon. 😊</div>
+        </section>
     </main>
     <footer>
         <div class="copyright">
